@@ -11,16 +11,24 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "type-check": "./node_modules/typescript/bin/tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
+    "@types/react-helmet": "^6.1.0",
+    "@types/styled-components": "^5.1.4",
     "gatsby": "^2.25.3",
+    "gatsby-plugin-styled-components": "^3.5.0",
     "gatsby-plugin-typescript": "^2.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.1",
+    "styled-reset": "^4.3.1",
     "typescript": "^4.0.5"
   },
   "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "2.1.2"
   },
   "repository": {
