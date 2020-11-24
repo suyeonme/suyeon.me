@@ -5,7 +5,7 @@ import reset from 'styled-reset';
 
 import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
-// import Footer from 'components/Layout/Footer/Footer';
+import Footer from 'components/Layout/Footer/Footer';
 // import HomeHeader from 'components/Header/HomeHeader/';
 // import SubHeader from 'components/Header/SubHeader';
 
@@ -123,7 +123,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Nav />
       </header>
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

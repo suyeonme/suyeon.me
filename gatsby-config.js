@@ -9,8 +9,15 @@ module.exports = {
     siteUrl: 'http://www.suyeonme.com',
     // image: 'http://www.gwcschool.com/assets/images/home-small.jpg',
     author: 'Suyeon Kang',
-    phone: '+82 10 5348 2863',
-    email: 'suyeon.dev@gmail.com',
+    profiles: {
+      phone: '+82 10 5348 2863',
+      email: 'suyeon.dev@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/suyeon-kang-0387331aa/',
+      instagram: 'https://www.instagram.com/suyeonme___/',
+      github: 'https://github.com/suyeonme',
+      blog: 'https://velog.io/@suyeonme',
+      resume: '',
+    },
   },
 
   plugins: [
@@ -20,7 +27,8 @@ module.exports = {
       options: {
         src: path.join(__dirname, 'src'),
         components: path.join(__dirname, 'src/components'),
-        // images: path.join(__dirname, 'src/assets/images'),
+        icons: path.join(__dirname, 'src/assets/icons'),
+        images: path.join(__dirname, 'src/assets/images'),
         // styles: path.join(__dirname, 'src/styles'),
       },
     },
