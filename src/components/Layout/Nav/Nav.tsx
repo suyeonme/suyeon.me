@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   right: 0;

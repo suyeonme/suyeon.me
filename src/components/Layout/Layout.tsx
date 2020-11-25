@@ -6,7 +6,7 @@ import reset from 'styled-reset';
 import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
 import Footer from 'components/Layout/Footer/Footer';
-// import HomeHeader from 'components/Header/HomeHeader/';
+import Header from 'components/Layout/Header/Header';
 // import SubHeader from 'components/Header/SubHeader';
 
 // Set font-family of Korean
@@ -121,6 +121,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <GlobalStyle />
       <header>
         <Nav />
+        <Header />
       </header>
       <main>{children}</main>
       <Footer />

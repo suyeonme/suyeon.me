@@ -9,7 +9,7 @@ import resume from 'icons/resume.svg';
 
 // Add blog and pdf resume
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   background-color: black;
   color: white;
   padding-top: 10rem;
@@ -58,7 +58,7 @@ const Copyright = styled.p`
   padding-bottom: 1rem;
 `;
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -76,7 +76,13 @@ const Footer = () => {
     }
   `);
 
-  const icons = [
+  interface Icons {
+    icon: string;
+    alt: string;
+    link: string;
+  }
+
+  const icons: Icons[] = [
     {
       icon: linkedin,
       alt: 'Linkedin',

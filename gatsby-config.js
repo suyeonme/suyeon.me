@@ -29,7 +29,7 @@ module.exports = {
         components: path.join(__dirname, 'src/components'),
         icons: path.join(__dirname, 'src/assets/icons'),
         images: path.join(__dirname, 'src/assets/images'),
-        // styles: path.join(__dirname, 'src/styles'),
+        styles: path.join(__dirname, 'src/styles'),
       },
     },
   ],
