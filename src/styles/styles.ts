@@ -4,9 +4,16 @@ interface PropTitle {
   align: string;
 }
 
-export const Wrapper = styled.section`
+interface PropWrapper {
+  padding?: string;
+  bgColor?: string;
+}
+
+export const Wrapper = styled.section<PropWrapper>`
   width: 100%;
   height: auto;
+  background-color: ${(props) => props.bgColor};
+  padding: ${(props) => (props.padding ? props.padding : '0')};
 `;
 
 export const H1Title = styled.h1<PropTitle>`

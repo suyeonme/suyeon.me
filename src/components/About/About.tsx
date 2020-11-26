@@ -1,25 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import aboutImg from 'images/about.jpg';
-
 import { Wrapper, H1Title, H2 } from 'styles/styles';
 
 // Tag on hover shows related libraries or frameworks
 // TechSkills: proficient | famillar
-
-const ImageWrapper = styled.div`
-  width: 100%;
-  height: 45vh;
-  background: url(${aboutImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
-`;
-
-const TextWrapper = styled.div`
-  background-color: white;
-  padding: 6rem 15rem;
-`;
 
 const Title = styled(H1Title)`
   width: 60%;
@@ -53,9 +37,8 @@ const About: React.FC = () => {
   }
 
   return (
-    <Wrapper>
-      <ImageWrapper />
-      <TextWrapper>
+    <Wrapper bgColor="white">
+      <Wrapper padding="6rem 15rem" bgColor="white">
         <div style={{ marginBottom: '6rem' }}>
           <Title align="center">
             &ldquo; I am an artist who love to build cool things. &rdquo;
@@ -78,11 +61,11 @@ const About: React.FC = () => {
           </p>
         </div>
         <div>
-          <H1Title align="left">Skills: </H1Title>
+          <H1Title align="left">SKILLS: </H1Title>
           <SkillBox title="TECHNICAL SKILLS" tags={Skill.Tech} />
           <SkillBox title="CREATIVE SKILLS" tags={Skill.Creative} />
         </div>
-      </TextWrapper>
+      </Wrapper>
     </Wrapper>
   );
 };
