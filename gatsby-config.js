@@ -10,13 +10,14 @@ module.exports = {
     // image: 'http://www.gwcschool.com/assets/images/home-small.jpg',
     author: 'Suyeon Kang',
     profiles: {
-      phone: '+82 10 5348 2863',
+      phone: '+82 1053482863',
       email: 'suyeon.dev@gmail.com',
-      linkedin: 'https://www.linkedin.com/in/suyeon-kang-0387331aa/',
-      instagram: 'https://www.instagram.com/suyeonme___/',
+      linkedin: 'http://www.linkedin.com/in/suyeonme',
+      instagram: 'https://www.instagram.com/suyeon___kang/',
       github: 'https://github.com/suyeonme',
       blog: 'https://velog.io/@suyeonme',
-      resume: '',
+      resume:
+        'https://docs.google.com/document/d/1C1LLM3NTPAEFqtOeyQsmO8qSjZ5xldw6sxS_L5-zxt4/edit#',
     },
   },
 

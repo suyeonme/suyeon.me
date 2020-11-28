@@ -70,6 +70,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
   }
 
+  p, ul {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
   p, a, li {
     font-size: 1.7rem;
   }
@@ -88,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   span {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   ::selection {
@@ -101,11 +106,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: #efebe6; 
+    background: #F8F8F8; 
   }
   
   ::-webkit-scrollbar-thumb {
-    background:  #BE7E64;
+    background:  black;
     border-radius: 20px;
   }
 `;

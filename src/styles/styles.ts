@@ -22,11 +22,15 @@ export const H1Title = styled.h1<PropTitle>`
   text-align: ${(props) => props.align};
   line-height: 1.5;
   margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(60px);
 `;
 
 export const H2 = styled.h2`
-  text-transform: uppercase;
-  font-weight: 400;
   font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateY(60px);
 `;
