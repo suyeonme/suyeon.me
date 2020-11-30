@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = () => {
@@ -37,7 +36,7 @@ const SEO = () => {
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;0,900;1,900&display=swap"
         rel="stylesheet"
       />
-      <title>Suyeon | Web Developer</title>
+      <title>Suyeon Kang</title>
       <script type="application/ld+json">
         {`
               {

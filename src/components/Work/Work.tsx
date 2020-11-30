@@ -7,6 +7,7 @@ import chaplinHair from 'images/chaplinhair.jpg';
 import gwcSchool from 'images/gwcschool.jpg';
 import googleKeep from 'images/google-keep.jpg';
 import { revealText } from 'styles/animations';
+import Button from 'components/Button/Button';
 
 interface PropBgImg {
   img: string;
@@ -29,33 +30,98 @@ const BgImg = styled.div<PropBgImg>`
   background-size: cover;
   background-repeat: no-repeat;
   transition: background 0.3s ease-in;
-  width: 80%;
-  height: 70vh;
-  opacity: 0.3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  width: 90%;
+  opacity: 0.23;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+  margin-left: 3rem;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    display: block;
+  }
+
+  &:after {
+    padding-top: 50.25%;
+    display: block;
+    content: '';
+  }
 `;
 
 const TextWrapper = styled.ul`
-  width: 90%;
+  width: 100%;
   position: absolute;
   top: 50%;
-  left: 53%;
+  left: 0;
   z-index: 30;
   opacity: 1;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 
-  li {
-    font-size: 2rem;
+  @media (max-width: 576px) {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  li,
+  span {
+    font-size: 1.7rem;
     font-weight: 300;
     opacity: 0.5;
     transition: opacity 0.3s ease-in;
 
-    &:hover {
+    @media (max-width: 576px) {
       opacity: 1;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      opacity: 0.5;
+    }
+  }
+
+  li:hover {
+    opacity: 1;
+
+    span {
+      opacity: 1;
+    }
+  }
+
+  span {
+    @media (max-width: 576px) {
+      display: block;
+      font-size: 1.7rem;
+      margin-left: 2.6rem;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      display: inline;
+    }
+  }
+
+  li {
+    @media (max-width: 576px) {
+      list-style: disc;
+      list-style-position: inside;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      list-style: none;
     }
   }
 `;
@@ -63,7 +129,12 @@ const TextWrapper = styled.ul`
 const Content = styled.div`
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: auto;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 `;
 
 const PageLink = styled.a`
@@ -71,6 +142,22 @@ const PageLink = styled.a`
   font-weight: 700;
   line-height: 1.7;
   margin-right: 3rem;
+
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 0;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.7;
+  }
 `;
 
 const GithubLink = styled.a<PropLink>`
@@ -123,7 +210,7 @@ const Work: React.FC = () => {
       title: 'Metta: loving',
       des: 'Meditation Application',
       img: metta,
-      path: 'https://metta-meditation.netlify.app/',
+      path: 'http://www.metta-meditation.netlify.app/',
       github: 'https://github.com/suyeonme/metta-meditation-app',
     },
     {
@@ -157,7 +244,7 @@ const Work: React.FC = () => {
               <PageLink href={link.path} target="_blank">
                 {link.title}
               </PageLink>
-              {link.des}
+              <span>{link.des}</span>
               <GithubLink
                 href={link.github}
                 target="_blank"
@@ -169,6 +256,7 @@ const Work: React.FC = () => {
           ))}
         </TextWrapper>
       </Content>
+      <Button text="Show More" paddingTop="6rem" />
     </Wrapper>
   );
 };

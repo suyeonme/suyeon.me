@@ -1,3 +1,9 @@
+/*
+Technical Skills
+Proficient: #html #css #javascript
+Familiar: #next.js #grapQL
+*/
+
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Wrapper, H1Title, H2 } from 'styles/styles';
@@ -8,6 +14,14 @@ const Title = styled(H1Title)`
   width: 60%;
   margin: 0 auto;
   margin-bottom: 5rem;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 const Tag = styled.p`

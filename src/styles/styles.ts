@@ -14,6 +14,18 @@ export const Wrapper = styled.section<PropWrapper>`
   height: auto;
   background-color: ${(props) => props.bgColor};
   padding: ${(props) => (props.padding ? props.padding : '0')};
+
+  @media (max-width: 1200px) {
+    padding: 6rem 8rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 6rem 3rem;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    padding: 6rem 8rem;
+  }
 `;
 
 export const H1Title = styled.h1<PropTitle>`
@@ -24,6 +36,14 @@ export const H1Title = styled.h1<PropTitle>`
   margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(60px);
+
+  @media (max-width: 1200px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const H2 = styled.h2`

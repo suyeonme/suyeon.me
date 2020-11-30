@@ -10,7 +10,7 @@ module.exports = {
     // image: 'http://www.gwcschool.com/assets/images/home-small.jpg',
     author: 'Suyeon Kang',
     profiles: {
-      phone: '+82 1053482863',
+      phone: '+82 10 5348 2863',
       email: 'suyeon.dev@gmail.com',
       linkedin: 'http://www.linkedin.com/in/suyeonme',
       instagram: 'https://www.instagram.com/suyeon___kang/',

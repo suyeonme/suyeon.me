@@ -1,78 +1,93 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
-
-import linkedin from 'icons/linkedin.svg';
-import instagram from 'icons/instagram.svg';
-import github from 'icons/github.svg';
-import resume from 'icons/resume.svg';
 import { revealText } from 'styles/animations';
 
 const Wrapper = styled.footer`
-  background-color: black;
-  color: white;
-  padding-top: 10rem;
+  background-color: white;
+  color: black;
+  border-top: 2px solid black;
+  padding: 2rem 0;
+
+  @media (max-width: 576px) {
+    padding: 6rem 0;
+  }
 `;
 
-const TextWrapper = styled.div`
-  width: 50%;
+const InnerWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  padding: 0 12rem;
 
-  h1,
-  ul {
-    opacity: 0;
-    transform: translateY(60px);
+  @media (max-width: 768px) {
+    padding: 0 8rem;
   }
 
-  h1 {
-    font-weight: 900;
-    font-style: italic;
-    font-size: 7rem;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    jusity-content: center;
+    align-items: flex-start;
+    padding: 0 6rem;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    padding: 0 8rem;
+  }
+
+  p,
+  ul {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   a,
-  li {
-    font-size: 1.7rem;
+  li,
+  p {
+    font-size: 1.5rem;
     font-weight: 300;
-    line-height: 2;
     text-align: left;
+    letter-spacing: 1px;
+  }
+
+  p {
+    @media (max-width: 576px) {
+      order: 3;
+    }
   }
 `;
 
-const IconsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
-  opacity: 0;
-  transform: translateY(60px);
-
-  a:not(:last-child) {
-    margin-right: 3.5rem;
+const InfoList = styled.ul`
+  @media (max-width: 576px) {
+    order: 1;
+    margin-bottom: 3rem;
   }
 
-  img {
-    width: 3rem;
-    height: 3rem;
+  li:not(:last-child) {
+    margin-bottom: 1rem;
   }
 `;
 
-const Copyright = styled.p`
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 1rem;
+const LinkList = styled.ul`
+  @media (max-width: 576px) {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
 `;
 
 const Footer: React.FC = () => {
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    revealText(sectionRef.current, '#footer-text');
-  }, []);
-
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -91,40 +106,44 @@ const Footer: React.FC = () => {
     }
   `);
 
-  interface Icons {
-    icon: string;
-    alt: string;
+  interface Links {
+    text: string;
     link: string;
   }
 
-  const icons: Icons[] = [
+  const links: Links[] = [
     {
-      icon: linkedin,
-      alt: 'Linkedin',
+      text: 'Linkedin |',
       link: data.site.siteMetadata.profiles.linkedin,
     },
     {
-      icon: github,
-      alt: 'Github',
+      text: 'Github |',
       link: data.site.siteMetadata.profiles.github,
     },
     {
-      icon: instagram,
-      alt: 'Instagram',
+      text: 'Instagram |',
       link: data.site.siteMetadata.profiles.instagram,
     },
     {
-      icon: resume,
-      alt: 'Resume',
+      text: 'Resume',
       link: data.site.siteMetadata.profiles.resume,
     },
   ];
 
   return (
-    <Wrapper id="contact" ref={sectionRef}>
-      <TextWrapper>
-        <h1 id="footer-text">Let's build something cool.</h1>
-        <ul id="footer-text">
+    <Wrapper>
+      <InnerWrapper>
+        <p>© Suyeon 2020</p>
+        <LinkList>
+          {links.map((link) => (
+            <li key={link.text}>
+              <a href={link.link} target="_blank">
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </LinkList>
+        <InfoList>
           <li>
             <a href={`mailto:${data.site.siteMetadata.profiles.email}`}>
               {data.site.siteMetadata.profiles.email}
@@ -136,16 +155,8 @@ const Footer: React.FC = () => {
             </a>
           </li>
           <li>Seoul, Korea</li>
-        </ul>
-      </TextWrapper>
-      <IconsWrapper id="footer-text">
-        {icons.map((icon, i) => (
-          <a href={icon.link} target="_blank" key={i}>
-            <img src={icon.icon} alt={icon.link} />
-          </a>
-        ))}
-      </IconsWrapper>
-      <Copyright id="footer-text">© Suyeon Kang 2020</Copyright>
+        </InfoList>
+      </InnerWrapper>
     </Wrapper>
   );
 };

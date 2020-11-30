@@ -12,29 +12,77 @@ const Wrapper = styled.div`
   background: url(${heroImg});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: left top;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    background-position: 25%;
+  }
+
+  @media (max-width: 576px) {
+    background-position: 40%;
+  }
 `;
 
 const TextWrapper = styled.div`
   margin-left: 15rem;
 
+  @media (max-width: 1200px) {
+    margin-left: 10rem;
+    transform: translateY(-10rem);
+  }
+
+  @media (max-width: 576px) {
+    margin-left: 3rem;
+    transform: translateY(-10rem);
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    transform: translateY(0);
+    margin-left: 6rem;
+  }
+
   p {
     margin-top: 3rem;
+
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
   }
 
   span {
     display: block;
     font-weight: 500;
+    font-size: 1.8rem;
+
+    @media (max-width: 576px) {
+      font-size: 2.3rem;
+    }
   }
 `;
 
 const Navs = styled.ul`
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    display: block;
+  }
+
   a {
     font-size: 7rem;
     font-weight: 900;
     line-height: 1.7;
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      font-size: 4rem;
+    }
   }
 
   li:hover {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useLocation } from '@reach/router';
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
@@ -7,7 +6,6 @@ import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
 import Footer from 'components/Layout/Footer/Footer';
 import Header from 'components/Layout/Header/Header';
-// import SubHeader from 'components/Header/SubHeader';
 
 // Set font-family of Korean
 
@@ -42,8 +40,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media (max-width: 320px) {
-      ${'' /* 5.5px = 1rem */}
-      font-size: 37%;
+      ${'' /* 6px = 1rem */}
+      font-size: 37.5%;
     }
   }
 
