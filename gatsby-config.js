@@ -5,7 +5,7 @@ module.exports = {
     title: 'Suyeonme',
     description: "Suyeon's portfolio website",
     keyword:
-      'portfolio, website, portfolio website, frontend developer, frontend, web developer',
+      'portfolio, portfolio website, frontend developer, frontend, web developer, Suyeon Kang',
     siteUrl: 'http://www.suyeonme.com',
     // image: 'http://www.gwcschool.com/assets/images/home-small.jpg',
     author: 'Suyeon Kang',
@@ -23,6 +23,7 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: 'gatsby-plugin-root-import',
       options: {

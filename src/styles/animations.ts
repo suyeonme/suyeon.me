@@ -31,8 +31,19 @@ export const moveToLeft = keyframes`
   from {
     margin-left: 0;
   }
-
   to {
     margin-left: 3rem;
   }
+`;
+
+export const bounce = keyframes`
+0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0);
+}
+40% {
+  transform: translateY(-10px);
+}
+60% {
+  transform: translateY(-5px);
+}
 `;

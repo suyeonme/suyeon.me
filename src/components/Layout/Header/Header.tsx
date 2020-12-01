@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import gsap from 'gsap';
 
 import heroImg from 'images/hero.jpg';
 import { moveToLeft } from 'styles/animations';
+import ScrollIndicator from 'components/Layout/Header/ScrollIndicator';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -71,7 +73,7 @@ const Navs = styled.ul`
     display: block;
   }
 
-  a {
+  button {
     font-size: 7rem;
     font-weight: 900;
     line-height: 1.7;
@@ -86,7 +88,7 @@ const Navs = styled.ul`
   }
 
   li:hover {
-    animation: ${moveToLeft} 0.3s ease-in forwards;
+    animation: ${moveToLeft} 0.8s cubic-bezier(0.22, 0.68, 0, 1.71) forwards;
   }
 `;
 
@@ -146,7 +148,7 @@ const Header: React.FC = () => {
         <Navs id="header-text">
           {navLinks.map((link) => (
             <li key={link.text}>
-              <a href={link.link}>{link.text}</a>
+              <button onClick={() => scrollTo(link.link)}>{link.text}</button>
             </li>
           ))}
         </Navs>
@@ -164,6 +166,7 @@ const Header: React.FC = () => {
           ))}
         </Links>
       </TextWrapper>
+      <ScrollIndicator />
     </Wrapper>
   );
 };

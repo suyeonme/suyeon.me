@@ -43,6 +43,8 @@ const GlobalStyle = createGlobalStyle`
       ${'' /* 6px = 1rem */}
       font-size: 37.5%;
     }
+
+    scroll-behavior: smooth;
   }
 
   body {
@@ -95,7 +97,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: black;
+    background-color: #ea2c62;
     color: #fff;
   }
 

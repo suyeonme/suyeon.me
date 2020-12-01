@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <InnerWrapper>
         <p>© Suyeon 2020</p>
         <LinkList>
