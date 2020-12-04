@@ -54,3 +54,17 @@ export const H2 = styled.h2`
   opacity: 0;
   transform: translateY(60px);
 `;
+
+export const Bold = styled.span`
+  display: inline-block;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  float: left;
+  margin-right: 10px;
+`;
+
+export const Capital = styled.span`
+  display: inline-block;
+  text-transform: uppercase;
+`;

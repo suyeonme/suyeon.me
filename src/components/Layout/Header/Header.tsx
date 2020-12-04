@@ -88,7 +88,7 @@ const Navs = styled.ul`
   }
 
   li:hover {
-    animation: ${moveToLeft} 0.8s cubic-bezier(0.22, 0.68, 0, 1.71) forwards;
+    animation: ${moveToLeft} 1s cubic-bezier(0.22, 0.68, 0, 1.71) forwards;
   }
 `;
 

@@ -121,6 +121,10 @@ const Footer: React.FC = () => {
       link: data.site.siteMetadata.profiles.github,
     },
     {
+      text: 'Blog |',
+      link: data.site.siteMetadata.profiles.blog,
+    },
+    {
       text: 'Instagram |',
       link: data.site.siteMetadata.profiles.instagram,
     },

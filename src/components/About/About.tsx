@@ -6,11 +6,23 @@ Familiar: #next.js #grapQL
 
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { Wrapper, H1Title, H2 } from 'styles/styles';
+import { Wrapper, H1Title, H2, Bold, Capital } from 'styles/styles';
 
 import { revealText } from 'styles/animations';
 
+const Description = styled.p`
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+`;
+
 const Title = styled(H1Title)`
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -63,21 +75,27 @@ const About: React.FC = () => {
         <Title align="center" id="about-text">
           &ldquo; I am an artist who love to build cool things. &rdquo;
         </Title>
-        <p id="about-text">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" The Extremes of Good.
-        </p>
-        <p id="about-text">
-          I am also a yogini and a diver. I am a huge fan of underwater sports,
-          especially scuba diving and freediving. these kind of sports challenge
-          me. So I love it.
-        </p>
+        <Description id="about-text">
+          <Bold>D</Bold>
+          <Capital>eveloper is like an artist</Capital> who can build their work
+          based on creativity, philosophy, and ideas from scratch. From white
+          empty paper, I believe, we have a power to draw and transform it into
+          a beautiful work which can give an inspiration, encourage, and help
+          other people. I want to contribute a beautiful journey making the
+          better world and having positive impact.
+        </Description>
+        <Description id="about-text">
+          I have an endless curiosity about whatever, especially learning new
+          skills. This makes me feel alive. This energy fuels me keep
+          challenging and pushing me out of a comfort zone. I will be a rascal
+          who never exhausted to come up with fun ideas and act on them until I
+          become a grandma.
+        </Description>
+        <Description id="about-text">
+          You can also call me an enthusiast of underwater sports, yogini, and
+          backpacker. I am a divemaster in scuba diving and also a freediver.
+          These are my biggest hobbies.
+        </Description>
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">
