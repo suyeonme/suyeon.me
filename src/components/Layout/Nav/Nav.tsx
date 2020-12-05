@@ -1,18 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { useTranslation } from 'react-i18next';
+
+import LangDropDown from 'components/Layout/Nav/LangDropDown';
 
 const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   right: 0;
   z-index: 200;
-  width: 6rem;
+  width: 6.5rem;
   height: 100vh;
   background: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -37,6 +39,8 @@ const StyledLink = styled(Link)`
   writing-mode: vertical-rl;
   text-orientation: mixed;
 
+  margin: auto;
+
   @media (max-width: 576px) {
     writing-mode: initial;
     text-orientation: initial;
@@ -50,14 +54,10 @@ const StyledLink = styled(Link)`
 `;
 
 const Nav: React.FC = () => {
-  const { i18n } = useTranslation();
-  const handleClick = (lang: string) => i18n.changeLanguage(lang);
-
   return (
     <Wrapper>
+      <LangDropDown />
       <StyledLink to="/">Suyeon.</StyledLink>
-      <button onClick={() => handleClick('en')}>En</button>
-      <button onClick={() => handleClick('ko')}>Ko</button>
     </Wrapper>
   );
 };
