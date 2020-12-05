@@ -1,14 +1,15 @@
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import { Wrapper, H1Title, H2, Bold, Capital } from 'styles/styles';
+import { useTranslation } from 'react-i18next';
+
+import { revealText } from 'styles/animations';
+
 /*
 Technical Skills
 Proficient: #html #css #javascript
 Familiar: #next.js #grapQL
 */
-
-import React, { useEffect, useRef } from 'react';
-import styled from 'styled-components';
-import { Wrapper, H1Title, H2, Bold, Capital } from 'styles/styles';
-
-import { revealText } from 'styles/animations';
 
 const Description = styled.p`
   font-family: 'Merriweather', serif;
@@ -19,20 +20,26 @@ const Description = styled.p`
   }
 `;
 
-const Title = styled(H1Title)`
+const Title = styled.h1`
   font-family: 'Merriweather', serif;
   font-style: italic;
+  font-size: 4rem;
   font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 5rem;
+  opacity: 0;
+  transform: translateY(60px);
 
   @media (max-width: 1200px) {
-    width: 80%;
+    width: 85%;
   }
 
   @media (max-width: 576px) {
     width: 100%;
+    font-size: 2.8rem;
   }
 `;
 
@@ -63,6 +70,7 @@ const SkillBox: React.FC<PropSkillDiv> = ({ title, tags }) => {
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const skillRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     revealText(sectionRef.current, '#about-text');
@@ -72,30 +80,19 @@ const About: React.FC = () => {
   return (
     <Wrapper padding="6rem 15rem" bgColor="white" id="about" ref={sectionRef}>
       <div style={{ marginBottom: '6rem' }}>
-        <Title align="center" id="about-text">
-          &ldquo; I am an artist who love to build cool things. &rdquo;
+        <Title id="about-text">
+          &ldquo;
+          {t('About.Title')}
+          &rdquo;
         </Title>
         <Description id="about-text">
-          <Bold>D</Bold>
-          <Capital>eveloper is like an artist</Capital> who can build their work
-          based on creativity, philosophy, and ideas from scratch. From white
-          empty paper, I believe, we have a power to draw and transform it into
-          a beautiful work which can give an inspiration, encourage, and help
-          other people. I want to contribute a beautiful journey making the
-          better world and having positive impact.
+          <Bold>{t('About.Des.Capital')}</Bold>
+          <Capital>{t('About.Des.0')}</Capital>
+          {t('About.Des.1')}
         </Description>
-        <Description id="about-text">
-          I have an endless curiosity about whatever, especially learning new
-          skills. This makes me feel alive. This energy fuels me keep
-          challenging and pushing me out of a comfort zone. I will be a rascal
-          who never exhausted to come up with fun ideas and act on them until I
-          become a grandma.
-        </Description>
-        <Description id="about-text">
-          You can also call me an enthusiast of underwater sports, yogini, and
-          backpacker. I am a divemaster in scuba diving and also a freediver.
-          These are my biggest hobbies.
-        </Description>
+        <Description id="about-text">{t('About.Des.2')}</Description>
+        <Description id="about-text">{t('About.Des.3')}</Description>
+        <Description id="about-text">{t('About.Des.4')}</Description>
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import { I18nextProvider } from 'react-i18next';
+import i18n from '../../i18n';
 
 import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
@@ -121,16 +123,18 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div style={{ overflow: 'hidden' }}>
-      <SEO />
-      <GlobalStyle />
-      <header>
-        <Nav />
-        <Header />
-      </header>
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <I18nextProvider i18n={i18n}>
+      <div style={{ overflow: 'hidden' }}>
+        <SEO />
+        <GlobalStyle />
+        <header>
+          <Nav />
+          <Header />
+        </header>
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </I18nextProvider>
   );
 };
 

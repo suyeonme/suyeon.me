@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Wrapper, H1Title } from 'styles/styles';
+import { useTranslation } from 'react-i18next';
 
 import metta from 'images/metta.jpg';
 import chaplinHair from 'images/chaplinhair.jpg';
@@ -172,6 +173,7 @@ const Work: React.FC = () => {
   const [currentImg, setCurrentImg] = useState(chaplinHair);
   const [isHover, setIsHover] = useState('');
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     revealText(sectionRef.current, '#work-text');
@@ -256,7 +258,7 @@ const Work: React.FC = () => {
           ))}
         </TextWrapper>
       </Content>
-      <Button text="Show More" paddingTop="6rem" />
+      <Button text={t('Button.Text')} paddingTop="6rem" />
     </Wrapper>
   );
 };

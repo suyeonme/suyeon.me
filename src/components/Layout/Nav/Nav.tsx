@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const Wrapper = styled.nav`
   position: fixed;
@@ -49,9 +50,14 @@ const StyledLink = styled(Link)`
 `;
 
 const Nav: React.FC = () => {
+  const { i18n } = useTranslation();
+  const handleClick = (lang: string) => i18n.changeLanguage(lang);
+
   return (
     <Wrapper>
       <StyledLink to="/">Suyeon.</StyledLink>
+      <button onClick={() => handleClick('en')}>En</button>
+      <button onClick={() => handleClick('ko')}>Ko</button>
     </Wrapper>
   );
 };

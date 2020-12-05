@@ -34,5 +34,11 @@ module.exports = {
         styles: path.join(__dirname, 'src/styles'),
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: `${__dirname}/src/components/Layout/Layout.tsx`,
+      },
+    },
   ],
 };

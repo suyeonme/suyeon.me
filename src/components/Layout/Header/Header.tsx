@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import gsap from 'gsap';
 
@@ -106,6 +107,8 @@ interface Link {
 }
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -121,11 +124,10 @@ const Header: React.FC = () => {
   `);
 
   const navLinks: Link[] = [
-    { text: 'ABOUT.', link: '#about' },
-    { text: 'WORK.', link: '#work' },
-    { text: 'CONTACT.', link: '#contact' },
+    { text: t('Nav.0'), link: '#about' },
+    { text: t('Nav.1'), link: '#work' },
+    { text: t('Nav.2'), link: '#contact' },
   ];
-
   const pageLinks: Link[] = [
     { text: 'Blog |', link: data.site.siteMetadata.profiles.blog },
     { text: 'Github |', link: data.site.siteMetadata.profiles.github },
@@ -156,6 +158,7 @@ const Header: React.FC = () => {
           <span>Suyeon Kang</span>
           Frontend Developer
         </p>
+
         <Links id="header-text">
           {pageLinks.map((link) => (
             <li key={link.text}>
