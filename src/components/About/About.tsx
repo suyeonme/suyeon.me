@@ -12,7 +12,7 @@ Familiar: #next.js #grapQL
 */
 
 const Description = styled.p`
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', 'Spoqa Han Sans';
   font-weight: 300;
 
   &:not(:last-child) {
@@ -21,7 +21,7 @@ const Description = styled.p`
 `;
 
 const Title = styled.h1`
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', 'Spoqa Han Sans';
   font-style: italic;
   font-size: 4rem;
   font-weight: 700;
@@ -39,7 +39,7 @@ const Title = styled.h1`
 
   @media (max-width: 576px) {
     width: 100%;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 `;
 

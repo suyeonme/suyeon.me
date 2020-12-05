@@ -4,12 +4,11 @@ import reset from 'styled-reset';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../../i18n';
 
+import 'fonts/fonts.css';
 import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
 import Footer from 'components/Layout/Footer/Footer';
 import Header from 'components/Layout/Header/Header';
-
-// Set font-family of Korean
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -36,21 +35,16 @@ const GlobalStyle = createGlobalStyle`
       font-size: 50%; 
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 320px) {
       ${'' /* 7px = 1rem */}
       font-size: 43.75%; 
-    }
-
-    @media (max-width: 320px) {
-      ${'' /* 6px = 1rem */}
-      font-size: 37.5%;
     }
 
     scroll-behavior: smooth;
   }
 
   body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Spoqa Han Sans';
     font-weight: 300;
     color: black;
     background-color: white;

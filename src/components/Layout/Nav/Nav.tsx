@@ -21,15 +21,18 @@ const Wrapper = styled.nav`
   @media (max-width: 576px) {
     width: 100%;
     height: 10rem;
-    justify-content: flex-start;
-    padding-left: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
-    width: 6rem;
+    width: 6.5rem;
     height: 100vh;
-    padding-left: 0;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 `;
 
@@ -38,18 +41,21 @@ const StyledLink = styled(Link)`
   font-size: 2.5rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-
   margin: auto;
 
   @media (max-width: 576px) {
     writing-mode: initial;
     text-orientation: initial;
+    margin: 0;
+    order: 1;
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
     font-size: 2.5rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    order: initial;
+    margin: auto;
   }
 `;
 

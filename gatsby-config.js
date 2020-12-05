@@ -6,8 +6,8 @@ module.exports = {
     description: "Suyeon's portfolio website",
     keyword:
       'portfolio, portfolio website, frontend developer, frontend, web developer, Suyeon Kang',
-    siteUrl: 'http://www.suyeonme.com',
-    // image: 'http://www.gwcschool.com/assets/images/home-small.jpg',
+    siteUrl: 'http://www.suyeon.dev.com',
+    image: 'http://www.suyeon.dev.com/assets/images/hero.jpg',
     author: 'Suyeon Kang',
     profiles: {
       phone: '+82 10 5348 2863',
@@ -30,8 +30,10 @@ module.exports = {
         src: path.join(__dirname, 'src'),
         components: path.join(__dirname, 'src/components'),
         icons: path.join(__dirname, 'src/assets/icons'),
+        fonts: path.join(__dirname, 'src/assets/fonts'),
         images: path.join(__dirname, 'src/assets/images'),
         styles: path.join(__dirname, 'src/styles'),
+        hooks: path.join(__dirname, 'src/hooks'),
       },
     },
     {

@@ -50,7 +50,7 @@ const TextWrapper = styled.div`
     margin-top: 3rem;
 
     @media (max-width: 576px) {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 

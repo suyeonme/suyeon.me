@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
+import useClickInside from 'hooks/useClickInside';
 import arrow from 'icons/arrow-down.svg';
 import korea from 'icons/korea.png';
 import usa from 'icons/usa.png';
@@ -12,26 +13,65 @@ const Wrapper = styled.div`
   margin-top: 2rem;
   cursor: pointer;
 
+  @media (max-width: 576px) {
+    order: 2;
+    margin-top: 0;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    margin-top: 2rem;
+    order: initial;
+  }
+
   span {
     font-size: 1.5rem;
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
+
+    @media (max-width: 576px) {
+      font-size: 2.3rem;
+      margin-right: 1rem;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
   }
 
   img {
     width: 1rem;
     height: 1rem;
+
+    @media (max-width: 576px) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      width: 1rem;
+      height: 1rem;
+    }
   }
 `;
 
 const Dropdown = styled.ul`
+  width: 6.5rem;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 1;
-  width: 6.5rem;
+  z-index: 10;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   opacity: 1;
+  background-color: white;
+
+  @media (max-width: 576px) {
+    width: 10rem;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
+    width: 6.5rem;
+  }
 
   li {
     font-size: 1.5rem;
@@ -41,7 +81,15 @@ const Dropdown = styled.ul`
     align-items: center;
 
     &:hover {
-      background-color: #f9f9f9;
+      background-color: #f2efef;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.3rem;
+    }
+
+    @media (max-width: 812px) and (orientation: landscape) {
+      font-size: 1.5rem;
     }
   }
 
@@ -49,6 +97,11 @@ const Dropdown = styled.ul`
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.8rem;
+
+    @media (max-width: 576px) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 `;
 
@@ -59,8 +112,8 @@ type Languages = {
 
 const LangDropDown: React.FC = () => {
   const [lang, setLang] = useState('en');
-  const [isHover, setIsHover] = useState(false);
   const { i18n } = useTranslation();
+  const { ref, clickInside, setClickInside } = useClickInside(false);
 
   const languages: Languages[] = [
     { lang: 'en', icon: usa },
@@ -70,18 +123,16 @@ const LangDropDown: React.FC = () => {
   const handleClick = (lang: string): void => {
     i18n.changeLanguage(lang);
     setLang(lang);
+    setClickInside(false);
   };
 
   return (
-    <Wrapper
-      onMouseEnter={(): void => setIsHover(true)}
-      onMouseLeave={(): void => setIsHover(false)}
-    >
+    <Wrapper ref={ref}>
       <span>{lang}</span>
-      {isHover && (
+      {clickInside && (
         <Dropdown>
           {languages.map((lang) => (
-            <li onClick={() => handleClick(lang.lang)}>
+            <li onClick={() => handleClick(lang.lang)} key={lang.lang}>
               <img src={lang.icon} alt={lang.lang} />
               {lang.lang}
             </li>
@@ -93,4 +144,4 @@ const LangDropDown: React.FC = () => {
   );
 };
 
-export default LangDropDown;
+export default React.memo(LangDropDown);

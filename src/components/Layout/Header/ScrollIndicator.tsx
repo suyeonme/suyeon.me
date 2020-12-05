@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     color: white;
     letter-spacing: 3px;
     transform: translateY(0);
+    font-size: 1.5rem;
   }
 
   img {

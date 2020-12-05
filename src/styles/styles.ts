@@ -16,7 +16,7 @@ export const Wrapper = styled.section<PropWrapper>`
   padding: ${(props) => (props.padding ? props.padding : '0')};
 
   @media (max-width: 1200px) {
-    padding: 6rem 8rem;
+    padding: 6rem 10rem 6rem 8rem;
   }
 
   @media (max-width: 576px) {

@@ -20,19 +20,23 @@ const InnerWrapper = styled.div`
   align-items: center;
   padding: 0 12rem;
 
+  @media (max-width: 1200px) {
+    padding: 0 12rem 0 6rem;
+  }
+
   @media (max-width: 768px) {
-    padding: 0 8rem;
+    padding: 0 10rem 0 8rem;
   }
 
   @media (max-width: 576px) {
     flex-direction: column;
     jusity-content: center;
     align-items: flex-start;
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
-    padding: 0 8rem;
+    padding: 0 10rem 0 8rem;
   }
 
   p,

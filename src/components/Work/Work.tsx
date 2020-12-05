@@ -149,7 +149,7 @@ const PageLink = styled.a`
   }
 
   @media (max-width: 576px) {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 500;
     line-height: 0;
   }
