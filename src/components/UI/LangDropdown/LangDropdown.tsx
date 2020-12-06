@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
@@ -127,10 +127,23 @@ const LangDropdown: React.FC = () => {
   ];
 
   const handleClick = (l: string): void => {
-    i18n.changeLanguage(l);
     setLang(l);
+    i18n.changeLanguage(l);
     setClickInside(false);
   };
+
+  useEffect(() => {
+    // Detect user's browser language and change default language of dropdown
+    const userLanguage: string = window.navigator.language;
+
+    if (userLanguage === 'ko') {
+      setLang('ko');
+      i18n.changeLanguage('ko');
+    } else {
+      setLang('en');
+      i18n.changeLanguage('en');
+    }
+  }, []);
 
   return (
     <Wrapper ref={ref}>
