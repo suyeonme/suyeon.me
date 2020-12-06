@@ -9,7 +9,7 @@ import heroImg from 'images/hero.jpg';
 import { moveToLeft } from 'styles/animations';
 import ScrollIndicator from 'components/Layout/Header/ScrollIndicator';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   width: 100%;
   height: 100vh;
   background: url(${heroImg});

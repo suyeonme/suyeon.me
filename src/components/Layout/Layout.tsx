@@ -8,7 +8,6 @@ import 'fonts/fonts.css';
 import SEO from 'components/Layout/SEO/SEO';
 import Nav from 'components/Layout/Nav/Nav';
 import Footer from 'components/Layout/Footer/Footer';
-import Header from 'components/Layout/Header/Header';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -123,7 +122,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <GlobalStyle />
         <header>
           <Nav />
-          <Header />
         </header>
         <main>{children}</main>
         <Footer />
