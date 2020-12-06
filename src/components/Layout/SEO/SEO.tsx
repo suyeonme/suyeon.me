@@ -24,7 +24,7 @@ const SEO = () => {
       <meta name="description" content={data.site.siteMetadata.description} />
       <meta name="author" content={data.site.siteMetadata.author} />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Suyeonme" />
+      <meta property="og:title" content="Suyeon.me" />
       <meta
         property="og:description"
         content={data.site.siteMetadata.description}
@@ -43,8 +43,8 @@ const SEO = () => {
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
-                "url": "http://www.suyeonme.com",
-                "name": "Suyeonme"
+                "url": "https://suyeon.me",
+                "name": "Suyeon.me"
               }
             `}
       </script>

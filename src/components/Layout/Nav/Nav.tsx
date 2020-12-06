@@ -20,7 +20,7 @@ const Wrapper = styled.nav`
 
   @media (max-width: 576px) {
     width: 100%;
-    height: 10rem;
+    height: 8rem;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 3rem;

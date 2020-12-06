@@ -92,7 +92,7 @@ const About: React.FC = () => {
         </Description>
         <Description id="about-text">{t('About.Des.2')}</Description>
         <Description id="about-text">{t('About.Des.3')}</Description>
-        <Description id="about-text">{t('About.Des.4')}</Description>
+        {/* <Description id="about-text">{t('About.Des.4')}</Description> */}
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">

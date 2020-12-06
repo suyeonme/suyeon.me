@@ -5,9 +5,9 @@ module.exports = {
     title: 'Suyeonme',
     description: "Suyeon's portfolio website",
     keyword:
-      'portfolio, portfolio website, frontend developer, frontend, web developer, Suyeon Kang',
-    siteUrl: 'http://www.suyeon.dev.com',
-    image: 'http://www.suyeon.dev.com/assets/images/hero.jpg',
+      'suyeon.me, portfolio, portfolio website, frontend developer, frontend, web developer, Suyeon Kang',
+    siteUrl: 'https://suyeon.me',
+    image: 'https://suyeon.me/assets/images/hero.jpg',
     author: 'Suyeon Kang',
     profiles: {
       phone: '+82 10 5348 2863',
@@ -22,9 +22,37 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://suyeon.me',
+        sitemap: 'https://suyeon.me//sitemap.xml',
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/$',
+            disallow: '/',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-4DK16HDDQZ`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en',
+      },
+    },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
