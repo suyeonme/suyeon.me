@@ -8,7 +8,7 @@ import chaplinHair from 'images/chaplinhair.jpg';
 import gwcSchool from 'images/gwcschool.jpg';
 import googleKeep from 'images/google-keep.jpg';
 import { revealText } from 'styles/animations';
-import Button from 'components/Button/Button';
+import Button from 'components/UI/Button/Button';
 
 interface PropBgImg {
   img: string;
@@ -60,14 +60,14 @@ const TextWrapper = styled.ul`
   top: 50%;
   left: 0;
   z-index: 30;
-  opacity: 1;
+  opacity: 0;
   transform: translateY(-50%);
 
   @media (max-width: 576px) {
     position: static;
     top: unset;
     left: unset;
-    transform: translateY(0);
+    transform: translateY(60px);
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
@@ -102,6 +102,10 @@ const TextWrapper = styled.ul`
   }
 
   span {
+    font-family: 'Merriweather';
+    font-size: 1.9rem;
+    font-style: italic;
+
     @media (max-width: 576px) {
       display: block;
       font-size: 1.7rem;
@@ -142,7 +146,7 @@ const PageLink = styled.a`
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.7;
-  margin-right: 3rem;
+  margin-right: 2rem;
 
   @media (max-width: 1200px) {
     font-size: 3rem;
@@ -151,7 +155,7 @@ const PageLink = styled.a`
   @media (max-width: 576px) {
     font-size: 1.9rem;
     font-weight: 500;
-    line-height: 0;
+    line-height: 1.3;
   }
 
   @media (max-width: 812px) and (orientation: landscape) {
@@ -236,7 +240,7 @@ const Work: React.FC = () => {
       </H1Title>
       <Content>
         <BgImg img={currentImg} />
-        <TextWrapper>
+        <TextWrapper id="work-text">
           {links.map((link) => (
             <li
               key={link.title}
@@ -246,7 +250,7 @@ const Work: React.FC = () => {
               <PageLink href={link.path} target="_blank">
                 {link.title}
               </PageLink>
-              <span>{link.des}</span>
+              <span>&mdash; &nbsp; {link.des}</span>
               <GithubLink
                 href={link.github}
                 target="_blank"

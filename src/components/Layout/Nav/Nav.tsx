@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import LangDropDown from 'components/Layout/Nav/LangDropDown';
+import LangDropdown from 'components/UI/LangDropdown/LangDropdown';
 
 const Wrapper = styled.nav`
   position: fixed;
@@ -62,7 +62,7 @@ const StyledLink = styled(Link)`
 const Nav: React.FC = () => {
   return (
     <Wrapper>
-      <LangDropDown />
+      <LangDropdown />
       <StyledLink to="/">Suyeon.</StyledLink>
     </Wrapper>
   );

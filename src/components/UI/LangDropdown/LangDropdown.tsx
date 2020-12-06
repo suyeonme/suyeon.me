@@ -7,6 +7,10 @@ import arrow from 'icons/arrow-down.svg';
 import korea from 'icons/korea.png';
 import usa from 'icons/usa.png';
 
+interface PropDropdownItem {
+  iscurrent?: string;
+}
+
 const Wrapper = styled.div`
   position: relative;
   display: inline-block;
@@ -37,20 +41,20 @@ const Wrapper = styled.div`
       margin-right: 0.5rem;
     }
   }
+`;
 
-  img {
+const ArrowIcon = styled.img`
+  width: 1rem;
+  height: 1rem;
+
+  @media (max-width: 576px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  @media (max-width: 812px) and (orientation: landscape) {
     width: 1rem;
     height: 1rem;
-
-    @media (max-width: 576px) {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-
-    @media (max-width: 812px) and (orientation: landscape) {
-      width: 1rem;
-      height: 1rem;
-    }
   }
 `;
 
@@ -72,36 +76,38 @@ const Dropdown = styled.ul`
   @media (max-width: 812px) and (orientation: landscape) {
     width: 6.5rem;
   }
+`;
 
-  li {
-    font-size: 1.5rem;
-    line-height: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+const DropdownItem = styled.li<PropDropdownItem>`
+  font-size: 1.5rem;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) =>
+    props.iscurrent === 'true' ? '#f2efef' : 'inherit'};
 
-    &:hover {
-      background-color: #f2efef;
-    }
-
-    @media (max-width: 576px) {
-      font-size: 2.3rem;
-    }
-
-    @media (max-width: 812px) and (orientation: landscape) {
-      font-size: 1.5rem;
-    }
+  &:hover {
+    background-color: #f2efef;
   }
 
-  img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.8rem;
+  @media (max-width: 576px) {
+    font-size: 2.3rem;
+  }
 
-    @media (max-width: 576px) {
-      width: 2rem;
-      height: 2rem;
-    }
+  @media (max-width: 812px) and (orientation: landscape) {
+    font-size: 1.5rem;
+  }
+`;
+
+const Flag = styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+
+  @media (max-width: 576px) {
+    width: 2rem;
+    height: 2rem;
   }
 `;
 
@@ -110,7 +116,7 @@ type Languages = {
   icon: string;
 };
 
-const LangDropDown: React.FC = () => {
+const LangDropdown: React.FC = () => {
   const [lang, setLang] = useState('en');
   const { i18n } = useTranslation();
   const { ref, clickInside, setClickInside } = useClickInside(false);
@@ -120,9 +126,9 @@ const LangDropDown: React.FC = () => {
     { lang: 'ko', icon: korea },
   ];
 
-  const handleClick = (lang: string): void => {
-    i18n.changeLanguage(lang);
-    setLang(lang);
+  const handleClick = (l: string): void => {
+    i18n.changeLanguage(l);
+    setLang(l);
     setClickInside(false);
   };
 
@@ -131,17 +137,21 @@ const LangDropDown: React.FC = () => {
       <span>{lang}</span>
       {clickInside && (
         <Dropdown>
-          {languages.map((lang) => (
-            <li onClick={() => handleClick(lang.lang)} key={lang.lang}>
-              <img src={lang.icon} alt={lang.lang} />
-              {lang.lang}
-            </li>
+          {languages.map((l) => (
+            <DropdownItem
+              key={l.lang}
+              onClick={() => handleClick(l.lang)}
+              iscurrent={(lang === l.lang).toString()}
+            >
+              <Flag src={l.icon} alt={l.lang} />
+              {l.lang}
+            </DropdownItem>
           ))}
         </Dropdown>
       )}
-      <img src={arrow} alt="Options of Languages" />
+      <ArrowIcon src={arrow} alt="Options of Languages" />
     </Wrapper>
   );
 };
 
-export default React.memo(LangDropDown);
+export default React.memo(LangDropdown);

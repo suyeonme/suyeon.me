@@ -34,7 +34,7 @@ const SEO = () => {
       <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}`} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,900&family=Poppins:wght@300;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&family=Poppins:wght@300;500;700;900&display=swap"
         rel="stylesheet"
       />
       <title>Suyeon Kang</title>
