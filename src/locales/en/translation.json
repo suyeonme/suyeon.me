@@ -1,4 +1,8 @@
 {
+  "Header": {
+    "Name": "Suyeon Kang",
+    "Position": "Frontend Developer"
+  },
   "Nav": {
     "0": "ABOUT.",
     "1": "WORKS.",
@@ -13,6 +17,14 @@
       "2": "I am a lover of React and Javascript. And I have a passion for minimalism in development. I love to build service intuitive but as simple as possible in both design and code.  I want to be a rascal who is never exhausted to come up with fun ideas and act on them until I become a grandma.",
       "3": "You can also call me an enthusiast of underwater sports, yogini, and backpacker. I am a divemaster in scuba diving and also a freediver. These are my biggest hobbies."
     }
+  },
+  "Works": {
+    "0": "Hairsalon Website",
+    "1": "Wood&Barista School Website",
+    "2": "Clone Project",
+    "3": "Meditation Application",
+    "4": "Diving Log Application",
+    "5": "Ecoseason Gwangju Center Website"
   },
   "Button": {
     "Text": "Show More"

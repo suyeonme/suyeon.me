@@ -155,8 +155,8 @@ const Header: React.FC = () => {
           ))}
         </Navs>
         <p id="header-text">
-          <span>Suyeon Kang</span>
-          Frontend Developer
+          <span>{t('Header.Name')}</span>
+          {t('Header.Position')}
         </p>
 
         <Links id="header-text">

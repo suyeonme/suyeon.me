@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-style: normal;
+  font-weight: 500;
+  src: url('./SpoqaHanSansNeo-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-style: normal;
   font-weight: 900;
   src: url('./SpoqaHanSansNeo-Bold.woff') format('woff');
 }
