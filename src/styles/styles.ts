@@ -65,6 +65,7 @@ export const Bold = styled.span`
 `;
 
 export const Capital = styled.span`
+  font-size: 1.7rem;
   display: inline-block;
   text-transform: uppercase;
 `;

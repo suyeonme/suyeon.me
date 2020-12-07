@@ -7,7 +7,7 @@ module.exports = {
     keyword:
       'suyeon.me, portfolio, portfolio website, frontend developer, frontend, web developer, Suyeon Kang',
     siteUrl: 'https://suyeon.me',
-    image: 'https://suyeon.me/assets/images/hero.jpg',
+    image: 'https://suyeon.me/static/hero-b3ee659e3470e001dd4f121cbdcaa7c9.jpg',
     author: 'Suyeon Kang',
     profiles: {
       phone: '+82 10 5348 2863',

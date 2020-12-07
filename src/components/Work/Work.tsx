@@ -167,6 +167,8 @@ const PageLink = styled.a`
 
 const GithubLink = styled.a<PropLink>`
   font-size: 1.5rem;
+  font-family: 'Poppins';
+  font-style: initial;
   font-weight: 500;
   margin-left: 1rem;
   opacity: ${(props) => (props.isshow === 'true' ? 1 : 0)};
@@ -206,18 +208,18 @@ const Work: React.FC = () => {
       github: 'https://github.com/suyeonme/google-keep-clone',
     },
     {
+      title: 'Metta: loving',
+      des: 'Meditation Application',
+      img: metta,
+      path: 'https://metta-meditation.netlify.app/',
+      github: 'https://github.com/suyeonme/metta-meditation-app',
+    },
+    {
       title: 'Diving App',
       des: 'Diving Log Application',
       img: metta,
       path: 'http://www.chaplinhair.com',
       github: 'https://github.com/suyeonme/chaplinhair.com-gatsby',
-    },
-    {
-      title: 'Metta: loving',
-      des: 'Meditation Application',
-      img: metta,
-      path: 'http://www.metta-meditation.netlify.app/',
-      github: 'https://github.com/suyeonme/metta-meditation-app',
     },
     {
       title: 'Ecoseason.com',
@@ -250,14 +252,16 @@ const Work: React.FC = () => {
               <PageLink href={link.path} target="_blank">
                 {link.title}
               </PageLink>
-              <span>&mdash; &nbsp; {link.des}</span>
-              <GithubLink
-                href={link.github}
-                target="_blank"
-                isshow={(link.title === isHover).toString()}
-              >
-                | Github
-              </GithubLink>
+              <span>
+                &mdash; &nbsp; {link.des}
+                <GithubLink
+                  href={link.github}
+                  target="_blank"
+                  isshow={(link.title === isHover).toString()}
+                >
+                  | Github
+                </GithubLink>
+              </span>
             </li>
           ))}
         </TextWrapper>

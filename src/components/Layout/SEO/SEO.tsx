@@ -30,6 +30,8 @@ const SEO = () => {
         content={data.site.siteMetadata.description}
       />
       <meta property="og:image" content={data.site.siteMetadata.image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="800" />
       <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
       <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}`} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
