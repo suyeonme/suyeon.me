@@ -109,8 +109,10 @@ const TextWrapper = styled.ul`
     @media (max-width: 576px) {
       display: block;
       font-size: 1.7rem;
+      font-style: normal;
       margin-left: 2.6rem;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
+      margin-bottom: 1.3rem;
       opacity: 0.8;
     }
 
