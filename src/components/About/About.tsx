@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { Wrapper, H1Title, H2, Bold, Capital } from 'styles/styles';
+import { Wrapper, H1Title, H2, Bold, Capital, Link } from 'styles/styles';
 import { useTranslation } from 'react-i18next';
 
 import { revealText } from 'styles/animations';
@@ -72,6 +72,9 @@ const About: React.FC = () => {
   const skillRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
+  const velogLink =
+    'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98';
+
   useEffect(() => {
     revealText(sectionRef.current, '#about-text');
     revealText(skillRef.current, '#skill-text');
@@ -92,7 +95,9 @@ const About: React.FC = () => {
         </Description>
         <Description id="about-text">{t('About.Des.2')}</Description>
         <Description id="about-text">{t('About.Des.3')}</Description>
-        {/* <Description id="about-text">{t('About.Des.4')}</Description> */}
+        <Link href={velogLink} target="_blank">
+          {t('About.Des.4')}
+        </Link>
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">

@@ -69,3 +69,12 @@ export const Capital = styled.span`
   display: inline-block;
   text-transform: uppercase;
 `;
+
+export const Link = styled.a`
+  font-family: 'Merriweather', 'Spoqa Han Sans';
+  font-weight: 300;
+  color: #3997ed;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: underline;
+`;

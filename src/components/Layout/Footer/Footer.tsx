@@ -117,12 +117,12 @@ const Footer: React.FC = () => {
 
   const links: Links[] = [
     {
-      text: 'Linkedin |',
-      link: data.site.siteMetadata.profiles.linkedin,
-    },
-    {
       text: 'Github |',
       link: data.site.siteMetadata.profiles.github,
+    },
+    {
+      text: 'Linkedin |',
+      link: data.site.siteMetadata.profiles.linkedin,
     },
     {
       text: 'Blog |',

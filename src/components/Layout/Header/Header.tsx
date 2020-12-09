@@ -129,9 +129,9 @@ const Header: React.FC = () => {
     { text: t('Nav.2'), link: '#contact' },
   ];
   const pageLinks: Link[] = [
-    { text: 'Blog |', link: data.site.siteMetadata.profiles.blog },
     { text: 'Github |', link: data.site.siteMetadata.profiles.github },
-    { text: 'Linkedin', link: data.site.siteMetadata.profiles.linkedin },
+    { text: 'Linkedin  |', link: data.site.siteMetadata.profiles.linkedin },
+    { text: 'Blog', link: data.site.siteMetadata.profiles.blog },
   ];
 
   useEffect(() => {
