@@ -54,8 +54,8 @@ interface PropSkillDiv {
 }
 
 enum Skill {
-  Tech = '#html5 #css #scss #javascript #react #redux #gatsby.js #next.js #typescript #graphQL #apollo #node.js #express #babel #webpack #git #github',
-  Others = '#firebase #googleAnalytics #figma #photoshop',
+  Tech = '#html5 #css #scss #javascript #react #redux #gatsby.js #next.js #typescript #graphQL #apollo #babel #webpack #git #github',
+  Others = '#d3.js #firebase #googleAnalytics #figma #photoshop',
 }
 
 const SkillBox: React.FC<PropSkillDiv> = ({ title, tags }) => {
