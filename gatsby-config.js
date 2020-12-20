@@ -22,6 +22,13 @@ module.exports = {
   },
 
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-4DK16HDDQZ`,
+        head: true,
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-smoothscroll`,
@@ -39,12 +46,6 @@ module.exports = {
             disallow: '/',
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-4DK16HDDQZ`,
       },
     },
     {
