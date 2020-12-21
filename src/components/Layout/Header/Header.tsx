@@ -66,6 +66,15 @@ const TextWrapper = styled.div`
 `;
 
 const Navs = styled.ul`
+  ul,
+  li {
+    list-style: none;
+  }
+
+  li:hover {
+    animation: ${moveToLeft} 1s cubic-bezier(0.22, 0.68, 0, 1.71) forwards;
+  }
+
   @media (max-width: 576px) {
     display: none;
   }
@@ -86,10 +95,6 @@ const Navs = styled.ul`
     @media (max-width: 812px) and (orientation: landscape) {
       font-size: 4rem;
     }
-  }
-
-  li:hover {
-    animation: ${moveToLeft} 1s cubic-bezier(0.22, 0.68, 0, 1.71) forwards;
   }
 `;
 

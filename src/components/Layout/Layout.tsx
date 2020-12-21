@@ -84,7 +84,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ul, li {
-    list-style: none;
+    list-style: disc;
+    list-style-position: inside;
   }
 
   span {

@@ -5,11 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 import { revealText } from 'styles/animations';
 
-/*
-Technical Skills
-Proficient: #html #css #javascript
-Familiar: #next.js #grapQL
-*/
+const Tag = styled.p`
+  color: #3997ed;
+  cursor: pointer;
+`;
 
 const Description = styled.p`
   font-family: 'Merriweather', 'Spoqa Han Sans';
@@ -43,27 +42,28 @@ const Title = styled.h1`
   }
 `;
 
-const Tag = styled.p`
-  color: #3997ed;
-  cursor: pointer;
+const SkillWrapper = styled.div`
+  opacity: 0;
+  transform: translateY(60px);
+
+  h2,
+  p {
+    opacity: 1;
+    transform: translateY(0);
+  }
 `;
 
-interface PropSkillDiv {
+interface SkillProp {
   title: string;
   tags: string;
 }
 
-enum Skill {
-  Tech = '#html5 #css #scss #javascript #react #redux #gatsby.js #next.js #typescript #graphQL #apollo #babel #webpack #git #github',
-  Others = '#d3.js #firebase #googleAnalytics #figma #photoshop',
-}
-
-const SkillBox: React.FC<PropSkillDiv> = ({ title, tags }) => {
+const Skill: React.FC<SkillProp> = ({ title, tags }) => {
   return (
-    <div style={{ marginBottom: '3rem' }}>
-      <H2 id="skill-text">{title}</H2>
-      <Tag id="skill-text">{tags}</Tag>
-    </div>
+    <SkillWrapper style={{ marginBottom: '3rem' }} id="skill-text">
+      <H2>{title}</H2>
+      <Tag>{tags}</Tag>
+    </SkillWrapper>
   );
 };
 
@@ -72,13 +72,17 @@ const About: React.FC = () => {
   const skillRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
-  const velogLink =
-    'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98';
-
   useEffect(() => {
     revealText(sectionRef.current, '#about-text');
     revealText(skillRef.current, '#skill-text');
   }, []);
+
+  const techSkills: string =
+    '#html5 #css #scss #javascript #react #redux #gatsby.js #next.js #typescript #d3.js';
+  const otherSkills: string =
+    '#babel #webpack #git #github #firebase #googleAnalytics #figma';
+  const postLink: string =
+    'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98';
 
   return (
     <Wrapper padding="6rem 15rem" bgColor="white" id="about" ref={sectionRef}>
@@ -94,17 +98,16 @@ const About: React.FC = () => {
           {t('About.Des.1')}
         </Description>
         <Description id="about-text">{t('About.Des.2')}</Description>
-        <Description id="about-text">{t('About.Des.3')}</Description>
-        <Link href={velogLink} target="_blank">
-          {t('About.Des.4')}
+        <Link href={postLink} target="_blank" id="about-text" fade>
+          {t('About.Des.3')}
         </Link>
       </div>
       <div ref={skillRef}>
         <H1Title align="left" id="skill-text">
           SKILLS:
         </H1Title>
-        <SkillBox title="TECHNICAL SKILLS" tags={Skill.Tech} />
-        <SkillBox title="OTHER SKILLS" tags={Skill.Others} />
+        <Skill title="FRONT-END" tags={techSkills} />
+        <Skill title="OTHERS" tags={otherSkills} />
       </div>
     </Wrapper>
   );

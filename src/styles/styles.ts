@@ -70,11 +70,14 @@ export const Capital = styled.span`
   text-transform: uppercase;
 `;
 
-export const Link = styled.a`
+export const Link = styled('a')<{ fade?: boolean }>`
   font-family: 'Merriweather', 'Spoqa Han Sans';
   font-weight: 300;
   color: #3997ed;
   cursor: pointer;
   font-style: italic;
   text-decoration: underline;
+
+  opacity: ${(props) => (props.fade ? 0 : 1)};
+  transform: ${(props) => (props.fade ? 'translateY(60px)' : 'translateY(0)')};
 `;
