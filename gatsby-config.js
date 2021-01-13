@@ -10,7 +10,7 @@ module.exports = {
     image: 'https://suyeon.me/static/hero-b3ee659e3470e001dd4f121cbdcaa7c9.jpg',
     author: 'Suyeon Kang',
     profiles: {
-      phone: '+82 10 5348 2863',
+      phone: '+82 1053482863',
       email: 'suyeon.dev@gmail.com',
       linkedin: 'http://www.linkedin.com/in/suyeonme',
       instagram: 'https://www.instagram.com/suyeon___kang/',

@@ -11,19 +11,19 @@
   "About": {
     "Title": "I want to contribute a beautiful journey to make a better world.",
     "Des": {
-      "Capital": "A",
-      "0": "developer is like an artist ",
-      "1": " who can build a work based on creativity, philosophy, and ideas from scratch. From white empty paper, I believe, a developer has the power to draw and transform it into a beautiful work that can bring innovation to the world and help other people. I want to contribute a beautiful journey to making a better world and having a positive impact.",
-      "2": "I am interested in React and Javascript. In development, I have a passion for minimalism which helps to build simple UI and write intuitive but simple code. Simple UI makes users more accessible and easily consume a service, and  intuitive code makes cooperate easier between developers. I believe, a professional developer is a person who can solve complex things and translate them in an easy way so that everyone can grasp that and  also good at communication to enable comfortable and smooth collaboration between coworkers.  To be a better developer, I try constantly educating and pushing myself.",
-      "3": "Why I decide to become a developer"
+      "Capital": "I",
+      "0": "believe developers are an artist ",
+      "1": " who can build a beautiful work from scratch using their creativity, philosophy, and ideas. Developers have a power to draw and transform a white empty paper into a meaningful work that can bring innovation to the world and help other people. I want to contribute a beautiful journey to making a better world and having a positive impact.",
+      "2": "I am interested in React and Javascript. In development, I have a passion for minimalism which allows to build simple UI and write intuitive but simple code. Simple UI enables users more accessible and easily consume a service and  intuitive code makes easier cooperating between developers. I believe, a professional developer is a person who can solve complex things, translate them in an easy way so that everyone can grasp that, and is good at communication with coworkers.  To be a better developer, I constantly try to educate and push myself.",
+      "3": "Why I decided to become a developer"
     }
   },
   "Works": {
-    "0": "Clone google keep application using react, redux, and typescript as a web app.",
-    "1": "Metta is a simple meditation application built with react.",
+    "0": "Cloned google keep application using react, redux, and typescript.",
+    "1": "Built a simple meditation application using react.",
     "2": "Built a website of Chaplin Hair including design, development, deployment, and SEO with gatsby.js and GSAP.",
     "3": "Built a website of GWCschool including design, development, deployment, and SEO with gatsby.js and GSAP.",
-    "4": "Data Visualization with D3.js (going on)"
+    "4": "Data Visualization with D3.js and React."
   },
   "Button": {
     "Text": "Show More"

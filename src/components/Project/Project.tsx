@@ -84,18 +84,11 @@ const Work: React.FC = () => {
         'React, Redux, Typescript, Firebase, Styled-components, react-dnd',
     },
     {
-      title: 'Metta: loving',
-      des: t('Works.1'),
-      link: 'https://metta-meditation.netlify.app/',
-      github: 'https://github.com/suyeonme/metta-meditation-app',
-      techStacks: 'React, Styled-components',
-    },
-    {
-      title: 'Chaplinhair.com',
-      des: t('Works.2'),
-      link: 'http://www.chaplinhair.com',
-      github: 'http://github.com/suyeonme/chaplinhair.com-gatsby',
-      techStacks: 'Gatsby.js, React, Styled-components, GSAP',
+      title: 'Data Visualization',
+      des: t('Works.4'),
+      link: 'https://data-visualization-3ejqnur28.vercel.app/',
+      github: 'https://github.com/suyeonme/data-visualization',
+      techStacks: 'Next.js, D3.js, Styled-components, Topojson',
     },
     {
       title: 'Gwcschool.com',
@@ -105,11 +98,11 @@ const Work: React.FC = () => {
       techStacks: 'Gatsby.js, React, Styled-components, GSAP',
     },
     {
-      title: 'Data Visualization',
-      des: t('Works.4'),
-      link: '#',
-      github: '#',
-      techStacks: 'React, D3.js',
+      title: 'Chaplinhair.com',
+      des: t('Works.2'),
+      link: 'http://www.chaplinhair.com',
+      github: 'http://github.com/suyeonme/chaplinhair.com-gatsby',
+      techStacks: 'Gatsby.js, React, Styled-components, GSAP',
     },
   ];
 
