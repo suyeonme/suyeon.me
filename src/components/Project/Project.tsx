@@ -86,7 +86,7 @@ const Work: React.FC = () => {
     {
       title: 'Data Visualization',
       des: t('Works.4'),
-      link: 'https://data-visualization-3ejqnur28.vercel.app/',
+      link: 'https://data-visualization-f7b1yckzn.vercel.app/',
       github: 'https://github.com/suyeonme/data-visualization',
       techStacks: 'Next.js, D3.js, Styled-components, Topojson',
     },
