@@ -56,6 +56,7 @@ export const H2 = styled.h2`
 `;
 
 export const Bold = styled.span`
+  font-family: sans-serif;
   display: inline-block;
   font-size: 5.5rem;
   font-weight: 700;
