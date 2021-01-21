@@ -15,7 +15,7 @@ module.exports = {
       linkedin: 'http://www.linkedin.com/in/suyeonme',
       instagram: 'https://www.instagram.com/suyeon___kang/',
       github: 'https://github.com/suyeonme',
-      blog: 'https://velog.io/@suyeonme',
+      blog: 'https://medium.com/suyeonme',
       resume: 'https://www.notion.so/1c52c48f13074b70a6250df35679cdcb',
     },
   },
