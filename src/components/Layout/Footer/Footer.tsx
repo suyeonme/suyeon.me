@@ -103,7 +103,8 @@ const Footer: React.FC = () => {
             instagram
             github
             resume
-            blog
+            velog
+            medium
           }
         }
       }
@@ -125,8 +126,12 @@ const Footer: React.FC = () => {
       link: data.site.siteMetadata.profiles.linkedin,
     },
     {
-      text: 'Blog |',
-      link: data.site.siteMetadata.profiles.blog,
+      text: 'Velog |',
+      link: data.site.siteMetadata.profiles.velog,
+    },
+    {
+      text: 'Medium |',
+      link: data.site.siteMetadata.profiles.medium,
     },
     {
       text: 'Instagram |',

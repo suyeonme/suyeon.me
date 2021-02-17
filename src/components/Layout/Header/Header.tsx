@@ -121,7 +121,8 @@ const Header: React.FC = () => {
           profiles {
             linkedin
             github
-            blog
+            medium
+            velog
           }
         }
       }
@@ -136,7 +137,8 @@ const Header: React.FC = () => {
   const pageLinks: Link[] = [
     { text: 'Github |', link: data.site.siteMetadata.profiles.github },
     { text: 'Linkedin  |', link: data.site.siteMetadata.profiles.linkedin },
-    { text: 'Blog', link: data.site.siteMetadata.profiles.blog },
+    { text: 'Medium  |', link: data.site.siteMetadata.profiles.medium },
+    { text: 'Velog', link: data.site.siteMetadata.profiles.velog },
   ];
 
   useEffect(() => {
