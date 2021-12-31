@@ -82,3 +82,33 @@ export const Link = styled('a')<{ fade?: boolean }>`
   opacity: ${(props) => (props.fade ? 0 : 1)};
   transform: ${(props) => (props.fade ? 'translateY(60px)' : 'translateY(0)')};
 `;
+
+export const TemplateWrapper = styled.div`
+  opacity: 0;
+  transform: translateY(60px);
+
+  p,
+  ul,
+  h2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  li {
+    line-height: 1.7;
+  }
+
+  p {
+    font-family: 'Merriweather', 'Spoqa Han Sans';
+    font-weight: 300;
+  }
+`;
+
+export const Date = styled.p`
+  color: grey;
+  font-style: italic;
+`;

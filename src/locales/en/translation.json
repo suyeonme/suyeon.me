@@ -5,8 +5,9 @@
   },
   "Nav": {
     "0": "ABOUT.",
-    "1": "PROJECT.",
-    "2": "CONTACT."
+    "1": "WORK.",
+    "2": "PROJECT.",
+    "3": "CONTACT."
   },
   "About": {
     "Title": "I want to contribute a beautiful journey to make a better world.",
@@ -19,6 +20,48 @@
     }
   },
   "Works": {
+    "0": {
+      "Title": "WhatapLabs",
+      "Des": "Developed multiple features of a SaaS Monitoring service using react and typescript.",
+      "Date": "Mar 2021 - Present (Frontend Developer)",
+      "List": {
+        "0":{
+          "Title":  "[Whatap People] Whatap's Interview A to Z by Suyeon",
+          "Link": "https://www.whatap.io/ko/blog/75/index.html"
+        },
+        "1": "Site Admin Page Renewal",
+        "2": {
+          "Title": "[Montly Whatap, June] Multi Transaction Menu Renewal",
+          "Link": "https://www.whatap.io/ko/blog/85/index.html"
+        },
+        "3": {
+          "Title": "Migrated an IAM(Identity and Access Management) system of entire service and developed new pages related to an organization",
+          "Link": "https://guide.whatap.io/mng_agent/mng_agent/project_3_depth.html"
+        }
+      }
+    },
+    "1": {
+      "Title": "Freelance Web Developer",
+      "Des": "Developed and maintained the websites especially using Gatsby.js as a freelancer.",
+      "Date": "Feb 2020 - Oct 2020",
+      "List": {
+        "0": {
+          "Title": "Chaplin Hair",
+          "Link": "http://www.chaplinhair.com"
+        },
+        "1": {
+          "Title": "Gokseong Woodcraft Coffee Experience Center",
+          "Link": "http://www.gwcschool.com"
+        }
+      }
+    },
+    "2": {
+      "Title": "Dive Master(SDI)",
+      "Des": "Worked as a divemaster in Dahab, Egypt. Assisted an instructor and students.",
+      "Date": "Jun 2018 - Sep 2018"
+    }
+  },
+  "Projects": {
     "0": "Cloned google keep application using react, redux, and typescript.",
     "1": "Built a simple meditation application using react.",
     "2": "Built a website of Chaplin Hair including design, development, deployment, and SEO with gatsby.js and GSAP.",

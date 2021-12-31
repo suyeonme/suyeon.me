@@ -5,8 +5,9 @@
   },
   "Nav": {
     "0": "소개.",
-    "1": "프로젝트.",
-    "2": "연락처."
+    "1": "이력.",
+    "2": "프로젝트.",
+    "3": "연락처."
   },
   "About": {
     "Title": "더 나은 세상을 만드는 아름다운 여정에 함께 기여하고 싶습니다.",
@@ -19,6 +20,48 @@
     }
   },
   "Works": {
+    "0": {
+      "Title": "와탭랩스",
+      "Des": "React, Typescript를 사용하여 SaaS 모니터링 서비스의 다양한 개발",
+      "Date": "2021년3월 - 현재 (프론트엔드 개발자)",
+      "List": {
+        "0":{
+          "Title":  "[와탭 피플] 수연님이 경험한 와탭랩스 면접의 A to Z",
+          "Link": "https://www.whatap.io/ko/blog/75/index.html"
+        },
+        "1": "사이트 관리자 화면 개편",
+        "2": {
+          "Title": "[월간와탭 6월] 멀티 트랜잭션 메뉴 개편",
+          "Link": "https://www.whatap.io/ko/blog/85/index.html"
+        },
+        "3": {
+          "Title": "서비스 전반에 걸친 IAM(Identity and Access Management) 마이그레이션 및 조직 관련 화면/기능 제작",
+          "Link": "https://guide.whatap.io/mng_agent/mng_agent/project_3_depth.html"
+        }
+      }
+    },
+    "1": {
+      "Title": "프리랜서 웹개발자",
+      "Des": "프리랜서로 웹사이트 구축 및 유지보수",
+      "Date": "2020년 1월 - 2020년 10월 (프론트엔드 개발자)",
+      "List": {
+        "0": {
+          "Title": "채플린헤어",
+          "Link": "http://www.chaplinhair.com"
+        },
+        "1": {
+          "Title": "곡성 목공예 커피 체험관",
+          "Link": "http://www.gwcschool.com"
+        }
+      }
+    },
+    "2": {
+      "Title": "SDI 다이브 마스터(Dive Master)",
+      "Des": "이집트 다합에 위치한 Octopus dive center에서 다이브 마스터로 다이빙 가이드 및 교육 어시스트",
+      "Date": "2018년 6월 - 2018년 9월)"
+    }
+  },
+  "Projects": {
     "0": "React, Redux, Typescript를 사용한 Google Keep 클론 프로젝트",
     "1": "React를 사용한 명상 웹 어플리케이션",
     "2": "Gatsby.js와 GSAP을 사용하여 채플린 헤어 웹사이트 구축(디자인, 개발, 배포, SEO 작업)",
@@ -29,3 +72,5 @@
     "Text": "더 알아보기 "
   }
 }
+
+
