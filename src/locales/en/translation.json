@@ -35,8 +35,8 @@
           "Link": "https://www.whatap.io/ko/blog/85/index.html"
         },
         "3": {
-          "Title": "Migrated an IAM(Identity and Access Management) system of entire service and developed new pages related to an organization",
-          "Link": "https://guide.whatap.io/mng_agent/mng_agent/project_3_depth.html"
+          "Title": "Migrated a RBAC(Role-based access control) system and developed new features related to an organization",
+          "Link": "https://www.whatap.io/ko/blog/102/index.html"
         }
       }
     },
@@ -58,7 +58,7 @@
     "2": {
       "Title": "Dive Master(SDI)",
       "Des": "Worked as a divemaster in Dahab, Egypt. Assisted an instructor and students.",
-      "Date": "Jun 2018 - Sep 2018"
+      "Date": "Apr 2018 - Sep 2018"
     }
   },
   "Projects": {

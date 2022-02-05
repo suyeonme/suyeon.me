@@ -35,8 +35,8 @@
           "Link": "https://www.whatap.io/ko/blog/85/index.html"
         },
         "3": {
-          "Title": "서비스 전반에 걸친 IAM(Identity and Access Management) 마이그레이션 및 조직 관련 화면/기능 제작",
-          "Link": "https://guide.whatap.io/mng_agent/mng_agent/project_3_depth.html"
+          "Title": "서비스 전반에 걸친 RBAC(Role-based access control) 시스템  마이그레이션 및 프로젝트 계층 구조 개편",
+          "Link": "https://www.whatap.io/ko/blog/102/index.html"
         }
       }
     },
@@ -58,7 +58,7 @@
     "2": {
       "Title": "SDI 다이브 마스터(Dive Master)",
       "Des": "이집트 다합에 위치한 Octopus dive center에서 다이브 마스터로 다이빙 가이드 및 교육 어시스트",
-      "Date": "2018년 6월 - 2018년 9월)"
+      "Date": "2018년 4월 - 2018년 9월)"
     }
   },
   "Projects": {
