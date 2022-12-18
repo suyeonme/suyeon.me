@@ -16,8 +16,9 @@ module.exports = {
       instagram: 'https://www.instagram.com/suyeon___kang/',
       github: 'https://github.com/suyeonme',
       velog: 'https://velog.io/@suyeonme',
+      tistory: 'https://suyeonme.tistory.com',
       medium: 'https://medium.com/suyeonme',
-      resume: 'https://www.notion.so/1c52c48f13074b70a6250df35679cdcb',
+      resume: 'https://pond-banjo-b51.notion.site/45112efef45445d2aced48b32533fdb2',
     },
   },
 

@@ -4,10 +4,10 @@ export const VELOG_LINK =
 export const getSkillText = (type: 'client' | 'server' | 'others'): string => {
   switch (type) {
     case 'client':
-      return '#html5 #css #scss #javascript #typescript(frequently) #react(frequently) #redux #jest #gatsby.js #next.js  #d3.js #GSAP #websocket';
+      return '#HTML #CSS #SCSS #Javascript #Typescript(frequently) #React(frequently) #Redux #Jest #Gatsby.js #Next.js  #D3.js #GSAP #Websocket #Storybook';
     case 'server':
-      return '#node.js #express #mongodb #mongoose';
+      return '#Node.js #Express #Mongodb #Mongoose #Java #Springboot #MySQL #Redis #Docker';
     case 'others':
-      return '#jenkins #babel #webpack #git #firebase #googleAnalytics #figma #zeplin';
+      return '#Jenkins #Babel #Webpack #Git #Firebase #GoogleAnalytics #Figma #Zeplin';
   }
 };

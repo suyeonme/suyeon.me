@@ -126,17 +126,17 @@ const Footer: React.FC = () => {
       link: data.site.siteMetadata.profiles.linkedin,
     },
     {
-      text: 'Velog |',
-      link: data.site.siteMetadata.profiles.velog,
+      text: 'Tistory |',
+      link: data.site.siteMetadata.profiles.tistory,
     },
     {
       text: 'Medium |',
       link: data.site.siteMetadata.profiles.medium,
     },
-    {
-      text: 'Instagram |',
-      link: data.site.siteMetadata.profiles.instagram,
-    },
+    // {
+    //   text: 'Instagram |',
+    //   link: data.site.siteMetadata.profiles.instagram,
+    // },
     {
       text: 'Resume',
       link: data.site.siteMetadata.profiles.resume,

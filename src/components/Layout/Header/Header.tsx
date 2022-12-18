@@ -122,7 +122,7 @@ const Header: React.FC = () => {
             linkedin
             github
             medium
-            velog
+            tistory
           }
         }
       }
@@ -132,14 +132,14 @@ const Header: React.FC = () => {
   const navLinks: Link[] = [
     { text: t('Nav.0'), link: '#about' },
     { text: t('Nav.1'), link: '#work' },
-    { text: t('Nav.2'), link: '#project' },
+    // { text: t('Nav.2'), link: '#project' },
     { text: t('Nav.3'), link: '#contact' },
   ];
   const pageLinks: Link[] = [
     { text: 'Github |', link: data.site.siteMetadata.profiles.github },
     { text: 'Linkedin  |', link: data.site.siteMetadata.profiles.linkedin },
     { text: 'Medium  |', link: data.site.siteMetadata.profiles.medium },
-    { text: 'Velog', link: data.site.siteMetadata.profiles.velog },
+    { text: 'Tistory', link: data.site.siteMetadata.profiles.tistory },
   ];
 
   useEffect(() => {
