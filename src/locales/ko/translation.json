@@ -25,18 +25,35 @@
       "Des": "React, Typescript를 사용하여 SaaS 모니터링 서비스의 다양한 개발",
       "Date": "2021년3월 - 현재 (프론트엔드 개발자)",
       "List": {
-        "0":{
-          "Title":  "[와탭 피플] 수연님이 경험한 와탭랩스 면접의 A to Z",
+        "0": {
+          "Title": "[사용 기술] React, Typescript, Jest, Storybook, Styled-components"
+        },
+        "1": {
+          "Title": "[와탭 피플] 수연님이 경험한 와탭랩스 면접의 A to Z",
           "Link": "https://www.whatap.io/ko/blog/75/index.html"
         },
-        "1": "사이트 관리자 화면 개편",
         "2": {
-          "Title": "[월간와탭 6월] 멀티 트랜잭션 메뉴 개편",
-          "Link": "https://www.whatap.io/ko/blog/85/index.html"
+          "Title": "[사이트 관리자] 비즈니스 보드 페이지 제작"
         },
         "3": {
-          "Title": "서비스 전반에 걸친 RBAC(Role-based access control) 시스템  마이그레이션 및 프로젝트 계층 구조 개편",
+          "Title": "[멀티트랜잭션 추적] 기존의 UI의 불편함을 해소하여 사용성 개선",
+          "Link": "https://www.whatap.io/ko/blog/85/index.html"
+        },
+        "4": {
+          "Title": "[권한 관리] 서비스 전반의 권한 관리(RBAC, Role-based access control) 시스템 마이그레이션 및 모니터링 단위인 ‘조직’ 계층 추가 및 ‘조직’ 관련 기능 개발",
           "Link": "https://www.whatap.io/ko/blog/102/index.html"
+        },
+        "5": {
+          "Title": "[클라우드 모니터링] Azure Monitor, Naver Cloud Monitoring 추가",
+          "Link": "https://docs.whatap.io/integration/items/integ-azure-monitor"
+        },
+        "6": {
+          "Title": "[보안] 계정 단위의 MFA(multi-factor authentication) 설정 기능 보완 (OTP, 이메일토큰)",
+          "Link": "https://www.whatap.io/ko/blog/116/"
+        },
+        "7": {
+          "Title": "[로그 모니터링] 로그 모니터링 유지 보수 및 신규 기능 개발(로그 검색기, 로그 탐색기, 라이브테일, 로그 파서, 통합 로그 검색기, 로그 알림, 로그 설정)",
+          "Link": "https://www.whatap.io/ko/blog/119/"
         }
       }
     },
@@ -46,10 +63,13 @@
       "Date": "2020년 1월 - 2020년 10월 (프론트엔드 개발자)",
       "List": {
         "0": {
+          "Title": "[사용 기술] React, Gatsby.js, GSAP, Styled-components, React-transition-group"
+        },
+        "1": {
           "Title": "채플린헤어",
           "Link": "http://www.chaplinhair.com"
         },
-        "1": {
+        "2": {
           "Title": "곡성 목공예 커피 체험관",
           "Link": "http://www.gwcschool.com"
         }
@@ -72,5 +92,3 @@
     "Text": "더 알아보기 "
   }
 }
-
-

@@ -28,18 +28,33 @@ const Work: React.FC = () => {
       list: [
         {
           title: t('Works.0.List.0.Title'),
-          link: t('Works.0.List.0.Link'),
         },
         {
-          title: t('Works.0.List.1'),
+          title: t('Works.0.List.1.Title'),
+          link: t('Works.0.List.1.Link'),
         },
         {
           title: t('Works.0.List.2.Title'),
-          link: t('Works.0.List.2.Link'),
         },
         {
           title: t('Works.0.List.3.Title'),
           link: t('Works.0.List.3.Link'),
+        },
+        {
+          title: t('Works.0.List.4.Title'),
+          link: t('Works.0.List.4.Link'),
+        },
+        {
+          title: t('Works.0.List.5.Title'),
+          link: t('Works.0.List.5.Link'),
+        },
+        {
+          title: t('Works.0.List.6.Title'),
+          link: t('Works.0.List.6.Link'),
+        },
+        {
+          title: t('Works.0.List.7.Title'),
+          link: t('Works.0.List.7.Link'),
         },
       ],
     },
@@ -50,19 +65,17 @@ const Work: React.FC = () => {
       list: [
         {
           title: t('Works.1.List.0.Title'),
-          link: t('Works.1.List.0.Link'),
         },
         {
           title: t('Works.1.List.1.Title'),
           link: t('Works.1.List.1.Link'),
         },
+        {
+          title: t('Works.1.List.2.Title'),
+          link: t('Works.1.List.2Link'),
+        },
       ],
-    },
-    {
-      title: t('Works.2.Title'),
-      des: t('Works.2.Des'),
-      date: t('Works.2.Date'),
-    },
+    }
   ];
 
   return (
