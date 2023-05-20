@@ -35,8 +35,7 @@ const LanguageSelector: React.FC = () => {
   const { ref, clickInside, setClickInside } = useClickInside(false);
 
   useEffect(() => {
-    const userLanguage = window.navigator.language;
-    onChangeLanguage(getUserLanguage(userLanguage));
+    onChangeLanguage(getUserLanguage(i18n.language));
   }, []);
 
   const getUserLanguage = (language: string): LanguageEnum => {
@@ -47,7 +46,8 @@ const LanguageSelector: React.FC = () => {
   };
 
   const onChangeDropdown = (language: LanguageEnum): void => {
-    onChangeLanguage(language);
+    const browserLanguage = window.navigator.language;
+    onChangeLanguage(language || browserLanguage);
     setClickInside(false);
   };
 
