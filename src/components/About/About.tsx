@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { revealText } from 'styles/animations';
 import { Tag, Description, Title, SkillWrapper } from './AboutStyle';
-import { VELOG_LINK, getSkillText } from './meta';
+import { getSkillText, BLOG_LINK } from './meta';
 
 interface SkillProp {
   title: string;
@@ -23,7 +23,7 @@ const Skill: React.FC<SkillProp> = ({ title, tags }) => {
 const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const skillRef = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     revealText(sectionRef.current, '#about-text');
@@ -44,7 +44,13 @@ const About: React.FC = () => {
           {t('About.Des.1')}
         </Description>
         <Description id="about-text">{t('About.Des.2')}</Description>
-        <Link href={VELOG_LINK} target="_blank" id="about-text" fade>
+
+        <Link
+          href={i18n.language === 'en' ? BLOG_LINK.MEDIUM : BLOG_LINK.VELOG}
+          target="_blank"
+          id="about-text"
+          fade
+        >
           {t('About.Des.3')}
         </Link>
       </div>
