@@ -72,7 +72,7 @@ const Work: React.FC = () => {
         },
         {
           title: t('Works.1.List.2.Title'),
-          link: t('Works.1.List.2Link'),
+          link: t('Works.1.List.2.Link'),
         },
       ],
     }
