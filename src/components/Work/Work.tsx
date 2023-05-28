@@ -34,6 +34,10 @@ const Work: React.FC = () => {
           link: t('Works.0.List.1.Link'),
         },
         {
+          title: t('Works.0.List.8.Title'),
+          link: t('Works.0.List.8.Link'),
+        },
+        {
           title: t('Works.0.List.2.Title'),
         },
         {

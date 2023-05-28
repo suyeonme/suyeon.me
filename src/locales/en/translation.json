@@ -45,8 +45,8 @@
           "Link": "https://www.whatap.io/ko/blog/102/index.html"
         },
         "5": {
-          "Title": "[Cloud Monitoring] Added Azure Monitor, Naver Cloud Monitoring",
-          "Link": "https://docs.whatap.io/integration/items/integ-azure-monitor"
+          "Title": "[Cloud Monitoring] Added Azure Monitoring, Naver Cloud Monitoring",
+          "Link": "https://docs.whatap.io/azure/install-agent"
         },
         "6": {
           "Title": "[Security] Implemented Multi-factor Authentication (MFA) per account (OTP, email token)",
@@ -55,6 +55,10 @@
         "7": {
           "Title": "[Log Monitoring] Maintained and developed new features of Log monitoring(Log search, Log explorer, Live tail, Log parser, Integrated log search, Log event, Log setting)",
           "Link": "https://www.whatap.io/ko/blog/119/"
+        },
+        "8": {
+          "Title": "[Interview] WhaTapLabs Frontend Developer Interview",
+          "Link": "https://www.jumpit.co.kr/job-interview/360"
         }
       }
     },
