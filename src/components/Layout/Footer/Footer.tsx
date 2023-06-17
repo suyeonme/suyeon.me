@@ -104,7 +104,8 @@ const Footer: React.FC = () => {
             github
             resume
             velog
-            medium
+            medium,
+            tistory
           }
         }
       }

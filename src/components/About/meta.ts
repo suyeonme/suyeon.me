@@ -8,8 +8,8 @@ export const getSkillText = (type: 'client' | 'server' | 'others'): string => {
     case 'client':
       return '#HTML #CSS #SCSS #Javascript #Typescript(frequently) #React(frequently) #Redux #Jest #Gatsby.js #Next.js  #D3.js #GSAP #Websocket #Storybook';
     case 'server':
-      return '#Node.js #Express #Mongodb #Mongoose #Java #Springboot #MySQL #Redis #Docker';
+      return '#Node.js #Nest.js #Express #Mongodb #Mongoose #Java #Springboot #MySQL #Redis';
     case 'others':
-      return '#Jenkins #Babel #Webpack #Git #Firebase #GoogleAnalytics #Figma #Zeplin';
+      return '#Jenkins #Docker #Babel #Webpack #Firebase #GoogleAnalytics';
   }
 };

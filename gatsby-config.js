@@ -18,7 +18,7 @@ module.exports = {
       velog: 'https://velog.io/@suyeonme',
       tistory: 'https://suyeonme.tistory.com',
       medium: 'https://medium.com/suyeonme',
-      resume: 'https://pond-banjo-b51.notion.site/45112efef45445d2aced48b32533fdb2',
+      resume: 'https://suyeonresume.notion.site/b311173ea3744f0eaf7f4880e6efd8c8?pvs=4',
     },
   },
 

@@ -31,11 +31,6 @@ const Work: React.FC = () => {
         },
         {
           title: t('Works.0.List.1.Title'),
-          link: t('Works.0.List.1.Link'),
-        },
-        {
-          title: t('Works.0.List.8.Title'),
-          link: t('Works.0.List.8.Link'),
         },
         {
           title: t('Works.0.List.2.Title'),
@@ -43,22 +38,6 @@ const Work: React.FC = () => {
         {
           title: t('Works.0.List.3.Title'),
           link: t('Works.0.List.3.Link'),
-        },
-        {
-          title: t('Works.0.List.4.Title'),
-          link: t('Works.0.List.4.Link'),
-        },
-        {
-          title: t('Works.0.List.5.Title'),
-          link: t('Works.0.List.5.Link'),
-        },
-        {
-          title: t('Works.0.List.6.Title'),
-          link: t('Works.0.List.6.Link'),
-        },
-        {
-          title: t('Works.0.List.7.Title'),
-          link: t('Works.0.List.7.Link'),
         },
       ],
     },
@@ -79,7 +58,7 @@ const Work: React.FC = () => {
           link: t('Works.1.List.2.Link'),
         },
       ],
-    }
+    },
   ];
 
   return (
