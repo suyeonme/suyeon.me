@@ -2,7 +2,7 @@
 
 <br />
 
-> This is a souce for [my portfolio website](https://suyeon.me).
+> This is a source code for [my portfolio website](https://suyeon.me).
 
 <br />
 
