@@ -25,21 +25,6 @@ const Work: React.FC = () => {
       title: t('Works.0.Title'),
       des: t('Works.0.Des'),
       date: t('Works.0.Date'),
-      list: [
-        {
-          title: t('Works.0.List.0.Title'),
-        },
-        {
-          title: t('Works.0.List.1.Title'),
-        },
-        {
-          title: t('Works.0.List.2.Title'),
-        },
-        {
-          title: t('Works.0.List.3.Title'),
-          link: t('Works.0.List.3.Link'),
-        },
-      ],
     },
     {
       title: t('Works.1.Title'),
@@ -51,11 +36,31 @@ const Work: React.FC = () => {
         },
         {
           title: t('Works.1.List.1.Title'),
-          link: t('Works.1.List.1.Link'),
         },
         {
           title: t('Works.1.List.2.Title'),
-          link: t('Works.1.List.2.Link'),
+        },
+        {
+          title: t('Works.1.List.3.Title'),
+          link: t('Works.1.List.3.Link'),
+        },
+      ],
+    },
+    {
+      title: t('Works.2.Title'),
+      des: t('Works.2.Des'),
+      date: t('Works.2.Date'),
+      list: [
+        {
+          title: t('Works.2.List.0.Title'),
+        },
+        {
+          title: t('Works.2.List.1.Title'),
+          link: t('Works.2.List.1.Link'),
+        },
+        {
+          title: t('Works.2.List.2.Title'),
+          link: t('Works.2.List.2.Link'),
         },
       ],
     },

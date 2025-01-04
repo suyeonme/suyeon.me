@@ -22,9 +22,15 @@
 
   "Works": {
     "0": {
+      "Title": "Karrot",
+      "Des": "I'm working on a data team, building various data products.",
+      "Date": "Jun 2024 - Present (Software Engineer, Frontend)",
+      "List": {}
+    },
+    "1": {
       "Title": "WhatapLabs",
-      "Des": "I am developing various functionalities for an online monitoring service that supports SaaS and On-Premise at the same time. I've focused on developing on the service's role-based access control(RBAC) system and log monitoring.",
-      "Date": "Mar 2021 - Present (Frontend Developer)",
+      "Des": "I developed various functionalities for an online monitoring service that supports SaaS and On-Premise at the same time. I've focused on developing on the service's role-based access control(RBAC) system and log monitoring.",
+      "Date": "Mar 2021 - May 2024 (Frontend Developer)",
       "List": {
         "0": {
           "Title": "[Tech Stacks] React, Typescript, Jest, Storybook, Styled-components"
@@ -41,7 +47,7 @@
         }
       }
     },
-    "1": {
+    "2": {
       "Title": "Freelance Web Developer",
       "Des": "I developed and maintained a static website using Gatsby.js as a freelancer. I implemented sophisticated animations to deliver a polished UI to users.",
       "Date": "Feb 2020 - Oct 2020",
