@@ -23,33 +23,33 @@ const Work: React.FC = () => {
   const works: Work[] = [
     {
       title: t('Works.0.Title'),
-      des: t('Works.0.Des'),
       date: t('Works.0.Date'),
+      des: t('Works.0.Des'),
     },
     {
       title: t('Works.1.Title'),
-      des: t('Works.1.Des'),
       date: t('Works.1.Date'),
+      des: t('Works.1.Des'),
       list: [
         {
           title: t('Works.1.List.0.Title'),
         },
         {
           title: t('Works.1.List.1.Title'),
+          link: t('Works.1.List.1.Link'),
         },
         {
           title: t('Works.1.List.2.Title'),
         },
         {
           title: t('Works.1.List.3.Title'),
-          link: t('Works.1.List.3.Link'),
         },
       ],
     },
     {
       title: t('Works.2.Title'),
-      des: t('Works.2.Des'),
       date: t('Works.2.Date'),
+      des: t('Works.2.Des'),
       list: [
         {
           title: t('Works.2.List.0.Title'),
@@ -57,10 +57,6 @@ const Work: React.FC = () => {
         {
           title: t('Works.2.List.1.Title'),
           link: t('Works.2.List.1.Link'),
-        },
-        {
-          title: t('Works.2.List.2.Title'),
-          link: t('Works.2.List.2.Link'),
         },
       ],
     },

@@ -11,8 +11,8 @@ const InnerWork = ({ work }: InnerWorkProps) => {
   return (
     <TemplateWrapper id="work-text">
       <H2>{title}</H2>
-      <p>{des}</p>
       <Date>{date}</Date>
+      <p>{des}</p>
       <ul>
         {list?.map((l) => {
           if (l.hasOwnProperty('link')) {

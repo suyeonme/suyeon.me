@@ -4,7 +4,7 @@ export const MEDIUM_BLOG_LINK =
 export const getSkillText = (type: 'client' | 'server' | 'others'): string => {
   switch (type) {
     case 'client':
-      return '#HTML #CSS #Javascript #Typescript(frequently) #React(frequently) #Tailwindcss #Gatsby.js #Next.js  #D3.js #GSAP #Storybook #Jest  #State #Babel #Bundle #Performance #Sentry';
+      return '#HTML #CSS #Javascript #Typescript(frequently) #React(frequently) #CSSinJS #UnilityFirstCSS #Gatsby.js #Next.js  #D3.js #GSAP #Storybook #Jest #State #Babel #Bundle #Performance #Sentry';
     case 'server':
       return '#Node.js #Nest.js #Express #MySQL #Redis #Java #Python #FastAPI';
     case 'others':
