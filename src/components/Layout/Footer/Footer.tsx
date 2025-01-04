@@ -101,8 +101,6 @@ const Footer: React.FC = () => {
             email
             linkedin
             github
-            resume
-            velog
             medium
             tistory
           }
@@ -130,12 +128,8 @@ const Footer: React.FC = () => {
       link: data.site.siteMetadata.profiles.tistory,
     },
     {
-      text: 'Medium |',
+      text: 'Medium',
       link: data.site.siteMetadata.profiles.medium,
-    },
-    {
-      text: 'Resume',
-      link: data.site.siteMetadata.profiles.resume,
     },
   ];
 

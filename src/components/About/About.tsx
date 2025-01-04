@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { revealText } from 'styles/animations';
 import { Tag, Description, Title, SkillWrapper } from './AboutStyle';
-import { getSkillText, BLOG_LINK } from './meta';
+import { getSkillText, MEDIUM_BLOG_LINK } from './meta';
 
 interface SkillProp {
   title: string;
@@ -45,12 +45,7 @@ const About: React.FC = () => {
         </Description>
         <Description id="about-text">{t('About.Des.2')}</Description>
 
-        <Link
-          href={i18n.language === 'en' ? BLOG_LINK.MEDIUM : BLOG_LINK.VELOG}
-          target="_blank"
-          id="about-text"
-          fade
-        >
+        <Link href={MEDIUM_BLOG_LINK} target="_blank" id="about-text" fade>
           {t('About.Des.3')}
         </Link>
       </div>

@@ -1,7 +1,5 @@
-export const BLOG_LINK = {
-  VELOG: 'https://velog.io/@suyeonme/%EC%96%B4%EC%A9%8C%EB%8B%A4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EC%97%88%EB%82%98',
-  MEDIUM: 'https://medium.com/suyeonme/why-i-decided-to-become-a-developer-a88966b829ce'
-}
+export const MEDIUM_BLOG_LINK =
+  'https://medium.com/suyeonme/why-i-decided-to-become-a-developer-a88966b829ce';
 
 export const getSkillText = (type: 'client' | 'server' | 'others'): string => {
   switch (type) {
