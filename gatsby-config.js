@@ -13,12 +13,12 @@ module.exports = {
       phone: '+82 1053482863',
       email: 'suyeon.dev@gmail.com',
       linkedin: 'http://www.linkedin.com/in/suyeonme',
-      instagram: 'https://www.instagram.com/suyeon___kang/',
       github: 'https://github.com/suyeonme',
       velog: 'https://velog.io/@suyeonme',
       tistory: 'https://suyeonme.tistory.com',
       medium: 'https://medium.com/suyeonme',
-      resume: 'https://suyeonresume.notion.site/b311173ea3744f0eaf7f4880e6efd8c8?pvs=4',
+      resume:
+        'https://suyeonresume.notion.site/b311173ea3744f0eaf7f4880e6efd8c8?pvs=4',
     },
   },
 
